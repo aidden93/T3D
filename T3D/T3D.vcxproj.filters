@@ -67,6 +67,12 @@
     <Filter Include="Source Files\Composite">
       <UniqueIdentifier>{a673c721-1285-4fe6-a4d0-a27e43965dce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Assignment1">
+      <UniqueIdentifier>{5f0b409d-529c-48e5-bcb8-2f47d0a33669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assignment1">
+      <UniqueIdentifier>{e20f6e80-16fe-4584-ac05-648883ccf245}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -236,6 +242,9 @@
     </ClCompile>
     <ClCompile Include="Lamp.cpp">
       <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="Propeller.cpp">
+      <Filter>Source Files\Assignment1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -409,6 +418,9 @@
     </ClInclude>
     <ClInclude Include="Lamp.h">
       <Filter>Header Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Propeller.h">
+      <Filter>Header Files\Assignment1</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
