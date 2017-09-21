@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Header Files\Component">
       <UniqueIdentifier>{7583d0e7-e247-454e-a2ef-dcbc3d46c6e8}</UniqueIdentifier>
     </Filter>
@@ -72,6 +68,10 @@
     </Filter>
     <Filter Include="Source Files\Assignment1">
       <UniqueIdentifier>{e20f6e80-16fe-4584-ac05-648883ccf245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +245,9 @@
     </ClCompile>
     <ClCompile Include="Propeller.cpp">
       <Filter>Source Files\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment1Test.cpp">
+      <Filter>Source Files\Application</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -421,6 +424,9 @@
     </ClInclude>
     <ClInclude Include="Propeller.h">
       <Filter>Header Files\Assignment1</Filter>
+    </ClInclude>
+    <ClInclude Include="Assignment1Test.h">
+      <Filter>Header Files\Application</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

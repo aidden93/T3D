@@ -2,8 +2,9 @@
 #include "Camera.h"
 #include "KeyboardController.h"
 //#include "Pyramid.h"
-//#include "Cylinder.h"
+#include "Cylinder.h"
 #include "Lamp.h"
+#include "Propeller.h"
 
 namespace T3D{
 
@@ -36,8 +37,8 @@ namespace T3D{
 		camObj->getTransform()->setParent(root);
 		camObj->addComponent(new KeyboardController()); //Allow the camera to be controlled by keyboard
 		
-		//Material *green = renderer->createMaterial(Renderer::PR_OPAQUE);
-		//green->setDiffuse(0, 1, 0, 1);
+		Material *green = renderer->createMaterial(Renderer::PR_OPAQUE);
+		green->setDiffuse(0, 1, 0, 1);
 
 		/*Pyramid
 		GameObject *pyramid = new GameObject(this);
@@ -56,7 +57,7 @@ namespace T3D{
 		cylinder->getTransform()->name = "Cylinder";
 		*/
 
-		/*Lamp*/
+		/*Lamp
 		Material *grey = renderer->createMaterial(Renderer::PR_OPAQUE);
 		grey->setDiffuse(0.8, 0.8, 0.9, 1);
 
@@ -74,7 +75,7 @@ namespace T3D{
 		lamp->baseJoint->getTransform()->setLocalRotation(Quaternion(Vector3(-Math::PI / 10, Math::PI / 4, 0)));
 		lamp->elbowJoint->getTransform()->setLocalRotation(Quaternion(Vector3(Math::PI / 8, 0, 0)));
 		lamp->shadeJoint->getTransform()->setLocalRotation(Quaternion(Vector3(Math::PI / 1.8, 0, 0)));
-
+*/
 		return true;
 	}
 }

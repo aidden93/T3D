@@ -36,7 +36,7 @@ namespace T3D {
 				density + i        // current bottom vertex
 			);
 
-			//Set the top and bottom triangles attached to the current side face
+			//Set the triangles attached to the current side face that form the caps
 			setFace(i, density * 4, (i + 1) % density + (density * 2), (density * 2) + i);
 			setFace(density + i, density * 4 + 1, density * 3 + i, (i + 1) % density + (density * 3));
 		}
