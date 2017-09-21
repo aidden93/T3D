@@ -39,7 +39,7 @@ namespace T3D {
 
 
 		GameObject *propeller = new GameObject(this);
-		propeller->setMesh(new Propeller(8, 2, 0.5, 0, 5, 15));
+		propeller->setMesh(new Propeller(3, 2, 0.5, /*Math::PI/8*/0, 4, 12));
 		propeller->setMaterial(green);
 		propeller->getTransform()->setLocalPosition(Vector3(0, 0, 0));
 		propeller->getTransform()->setParent(root);
