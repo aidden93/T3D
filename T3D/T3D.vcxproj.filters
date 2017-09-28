@@ -249,6 +249,12 @@
     <ClCompile Include="Assignment1Test.cpp">
       <Filter>Source Files\Application</Filter>
     </ClCompile>
+    <ClCompile Include="Jar.cpp">
+      <Filter>Source Files\Assignment1</Filter>
+    </ClCompile>
+    <ClCompile Include="FancyPropeller.cpp">
+      <Filter>Source Files\Assignment1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mesh.h">
@@ -427,6 +433,12 @@
     </ClInclude>
     <ClInclude Include="Assignment1Test.h">
       <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Jar.h">
+      <Filter>Header Files\Assignment1</Filter>
+    </ClInclude>
+    <ClInclude Include="FancyPropeller.h">
+      <Filter>Header Files\Assignment1</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -12,5 +12,6 @@ namespace T3D {
 			int density // the density of the hub (a multiple of blades)
 		);
 		virtual ~Propeller(void);
+		void setVertexFromVector(int idx, Vector3 vector);
 	};
 }

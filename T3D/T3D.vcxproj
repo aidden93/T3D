@@ -22,6 +22,7 @@
     <ClCompile Include="Cylinder.cpp" />
     <ClCompile Include="DiagMessageTask.cpp" />
     <ClCompile Include="DrawTask.cpp" />
+    <ClCompile Include="FancyPropeller.cpp" />
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="FontCache.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -30,6 +31,7 @@
     <ClCompile Include="GLTestApplication.cpp" />
     <ClCompile Include="GLTestRenderer.cpp" />
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="Jar.cpp" />
     <ClCompile Include="KeyboardController.cpp" />
     <ClCompile Include="Lamp.cpp" />
     <ClCompile Include="Light.cpp" />
@@ -89,7 +91,9 @@
     <ClInclude Include="GLShader.h" />
     <ClInclude Include="GLTestApplication.h" />
     <ClInclude Include="GLTestRenderer.h" />
+    <ClInclude Include="FancyPropeller.h" />
     <ClInclude Include="Input.h" />
+    <ClInclude Include="Jar.h" />
     <ClInclude Include="KeyboardController.h" />
     <ClInclude Include="Lamp.h" />
     <ClInclude Include="Light.h" />
