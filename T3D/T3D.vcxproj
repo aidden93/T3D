@@ -35,6 +35,7 @@
     <ClCompile Include="KeyboardController.cpp" />
     <ClCompile Include="Lamp.cpp" />
     <ClCompile Include="Light.cpp" />
+    <ClCompile Include="LightingTute.cpp" />
     <ClCompile Include="LookAtBehaviour.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Material.cpp" />
@@ -97,6 +98,7 @@
     <ClInclude Include="KeyboardController.h" />
     <ClInclude Include="Lamp.h" />
     <ClInclude Include="Light.h" />
+    <ClInclude Include="LightingTute.h" />
     <ClInclude Include="LookAtBehaviour.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="Math.h" />
