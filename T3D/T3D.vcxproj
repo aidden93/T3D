@@ -11,11 +11,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AnimationTest.cpp" />
     <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="AnimationTute.cpp" />
     <ClCompile Include="Assignment1Test.cpp" />
+    <ClCompile Include="Assignment2.cpp" />
     <ClCompile Include="Billboard.cpp" />
     <ClCompile Include="Bone.cpp" />
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Car.cpp" />
+    <ClCompile Include="CarMovement.cpp" />
     <ClCompile Include="Colour.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Cube.cpp" />
@@ -23,6 +28,8 @@
     <ClCompile Include="DiagMessageTask.cpp" />
     <ClCompile Include="DrawTask.cpp" />
     <ClCompile Include="FancyPropeller.cpp" />
+    <ClCompile Include="FlockingBehaviour.cpp" />
+    <ClCompile Include="FollowObject.cpp" />
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="FontCache.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -47,6 +54,7 @@
     <ClCompile Include="ParticleBehaviour.cpp" />
     <ClCompile Include="ParticleEmitter.cpp" />
     <ClCompile Include="PerfLogTask.cpp" />
+    <ClCompile Include="Person.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="PlaneMesh.cpp" />
     <ClCompile Include="Propeller.cpp" />
@@ -60,31 +68,44 @@
     <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="SoundTestTask.cpp" />
     <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="SteeringBehaviour.cpp" />
+    <ClCompile Include="SteeringTutorial.cpp" />
     <ClCompile Include="Sweep.cpp" />
     <ClCompile Include="SweepPath.cpp" />
     <ClCompile Include="T3DApplication.cpp" />
     <ClCompile Include="T3DTest.cpp" />
+    <ClCompile Include="TargetJump.cpp" />
     <ClCompile Include="Task.cpp" />
+    <ClCompile Include="TCube.cpp" />
     <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="TerrainFollower.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureTute.cpp" />
+    <ClCompile Include="Track.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="Tutorial1.cpp" />
     <ClCompile Include="Tutorial4.cpp" />
     <ClCompile Include="WinGLApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnimationTest.h" />
     <ClInclude Include="Animation.h" />
+    <ClInclude Include="AnimationTute.h" />
     <ClInclude Include="Assignment1Test.h" />
+    <ClInclude Include="Assignment2.h" />
     <ClInclude Include="Billboard.h" />
     <ClInclude Include="Bone.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="Car.h" />
+    <ClInclude Include="CarMovement.h" />
     <ClInclude Include="Colour.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Cube.h" />
     <ClInclude Include="Cylinder.h" />
     <ClInclude Include="DiagMessageTask.h" />
     <ClInclude Include="DrawTask.h" />
+    <ClInclude Include="FlockingBehaviour.h" />
+    <ClInclude Include="FollowObject.h" />
     <ClInclude Include="Font.h" />
     <ClInclude Include="FontCache.h" />
     <ClInclude Include="GameObject.h" />
@@ -109,6 +130,7 @@
     <ClInclude Include="ParticleBehaviour.h" />
     <ClInclude Include="ParticleEmitter.h" />
     <ClInclude Include="PerfLogTask.h" />
+    <ClInclude Include="Person.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="PlaneMesh.h" />
     <ClInclude Include="Propeller.h" />
@@ -122,20 +144,76 @@
     <ClInclude Include="SoundManager.h" />
     <ClInclude Include="SoundTestTask.h" />
     <ClInclude Include="Sphere.h" />
+    <ClInclude Include="SteeringBehaviour.h" />
+    <ClInclude Include="SteeringTutorial.h" />
     <ClInclude Include="Sweep.h" />
     <ClInclude Include="SweepPath.h" />
     <ClInclude Include="T3DApplication.h" />
     <ClInclude Include="T3DTest.h" />
+    <ClInclude Include="TargetJump.h" />
     <ClInclude Include="Task.h" />
+    <ClInclude Include="TCube.h" />
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="TerrainFollower.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureTute.h" />
+    <ClInclude Include="Track.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Tutorial1.h" />
     <ClInclude Include="Tutorial4.h" />
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Vector4.h" />
     <ClInclude Include="WinGLApplication.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Example.ogg" />
+    <None Include="Resources\frag.shader" />
+    <None Include="Resources\phongFrag.shader" />
+    <None Include="Resources\phongVert.shader" />
+    <None Include="Resources\vdiffuse.shader" />
+    <None Include="Resources\vert.shader" />
+    <None Include="Resources\vspecular.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\beep.wav" />
+    <Media Include="Resources\oddity.mp3" />
+    <Media Include="Resources\pretend.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\flames.png" />
+    <Image Include="Resources\ShippingContainer.png" />
+    <Image Include="Resources\Smiley.bmp" />
+    <Image Include="Resources\Smiley.png" />
+    <Image Include="Resources\sparkle.png" />
+    <Image Include="Resources\Sunny1_back.bmp" />
+    <Image Include="Resources\Sunny1_back.tif" />
+    <Image Include="Resources\Sunny1_down.bmp" />
+    <Image Include="Resources\Sunny1_down.tif" />
+    <Image Include="Resources\Sunny1_front.bmp" />
+    <Image Include="Resources\Sunny1_front.tif" />
+    <Image Include="Resources\Sunny1_left.bmp" />
+    <Image Include="Resources\Sunny1_left.tif" />
+    <Image Include="Resources\Sunny1_right.bmp" />
+    <Image Include="Resources\Sunny1_right.tif" />
+    <Image Include="Resources\Sunny1_up.bmp" />
+    <Image Include="Resources\Sunny1_up.tif" />
+    <Image Include="Resources\terrain.bmp" />
+    <Image Include="Resources\terrain.png" />
+    <Image Include="Resources\Texture_Rail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\FreeMono.ttf" />
+    <Font Include="Resources\FreeMonoBold.ttf" />
+    <Font Include="Resources\FreeMonoBoldOblique.ttf" />
+    <Font Include="Resources\FreeMonoOblique.ttf" />
+    <Font Include="Resources\FreeSans.ttf" />
+    <Font Include="Resources\FreeSansBold.ttf" />
+    <Font Include="Resources\FreeSansBoldOblique.ttf" />
+    <Font Include="Resources\FreeSansOblique.ttf" />
+    <Font Include="Resources\FreeSerif.ttf" />
+    <Font Include="Resources\FreeSerifBold.ttf" />
+    <Font Include="Resources\FreeSerifBoldItalic.ttf" />
+    <Font Include="Resources\FreeSerifItalic.ttf" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A41C2D2A-C0C1-4EE8-9B5A-00EDD049DC2F}</ProjectGuid>

@@ -64,6 +64,10 @@ namespace T3D
 		void setAlpha(float alpha) { this->alpha = alpha; }		// 
 		float getAlpha() { return alpha; }
 
+		std::vector<Component*> getComponents() {
+			return components;
+		}
+
 	protected:
 		T3DApplication *app;
 		Transform* transform;

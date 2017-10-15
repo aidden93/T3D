@@ -69,9 +69,21 @@
     <Filter Include="Source Files\Assignment1">
       <UniqueIdentifier>{e20f6e80-16fe-4584-ac05-648883ccf245}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Resource Files">
+    <Filter Include="Source Files\Resources">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Behaviours">
+      <UniqueIdentifier>{7fdc6477-d766-48c1-9f61-60e04d5b1cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Behaviours">
+      <UniqueIdentifier>{5ad38bec-de65-4657-84f0-b432ca102aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Assignment2">
+      <UniqueIdentifier>{9e8dac58-662a-4e58-b3b5-6965bca22180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assignment2">
+      <UniqueIdentifier>{e505b3ce-e130-46aa-85fd-1442ae16a7b9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +269,48 @@
     </ClCompile>
     <ClCompile Include="LightingTute.cpp">
       <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationTute.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationTest.cpp">
+      <Filter>Source Files\Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="SteeringBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="SteeringTutorial.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetJump.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="FlockingBehaviour.cpp">
+      <Filter>Source Files\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureTute.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="TCube.cpp">
+      <Filter>Source Files\Component\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Track.cpp">
+      <Filter>Source Files\Assignment2</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment2.cpp">
+      <Filter>Source Files\Assignment2</Filter>
+    </ClCompile>
+    <ClCompile Include="Car.cpp">
+      <Filter>Source Files\Assignment2</Filter>
+    </ClCompile>
+    <ClCompile Include="CarMovement.cpp">
+      <Filter>Source Files\Assignment2</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files\Assignment2</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowObject.cpp">
+      <Filter>Source Files\Assignment2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -446,5 +500,181 @@
     <ClInclude Include="LightingTute.h">
       <Filter>Header Files\Application</Filter>
     </ClInclude>
+    <ClInclude Include="AnimationTute.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationTest.h">
+      <Filter>Header Files\Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringTutorial.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetJump.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="FlockingBehaviour.h">
+      <Filter>Header Files\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureTute.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="TCube.h">
+      <Filter>Header Files\Component\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Track.h">
+      <Filter>Header Files\Assignment2</Filter>
+    </ClInclude>
+    <ClInclude Include="Car.h">
+      <Filter>Header Files\Assignment2</Filter>
+    </ClInclude>
+    <ClInclude Include="Assignment2.h">
+      <Filter>Header Files\Assignment2</Filter>
+    </ClInclude>
+    <ClInclude Include="CarMovement.h">
+      <Filter>Header Files\Assignment2</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>Header Files\Assignment2</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowObject.h">
+      <Filter>Header Files\Assignment2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Example.ogg">
+      <Filter>Source Files\Resources</Filter>
+    </None>
+    <None Include="Resources\frag.shader">
+      <Filter>Source Files\Resources</Filter>
+    </None>
+    <None Include="Resources\phongFrag.shader">
+      <Filter>Source Files\Resources</Filter>
+    </None>
+    <None Include="Resources\phongVert.shader">
+      <Filter>Source Files\Resources</Filter>
+    </None>
+    <None Include="Resources\vdiffuse.shader">
+      <Filter>Source Files\Resources</Filter>
+    </None>
+    <None Include="Resources\vert.shader">
+      <Filter>Source Files\Resources</Filter>
+    </None>
+    <None Include="Resources\vspecular.shader">
+      <Filter>Source Files\Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Resources\beep.wav">
+      <Filter>Source Files\Resources</Filter>
+    </Media>
+    <Media Include="Resources\oddity.mp3">
+      <Filter>Source Files\Resources</Filter>
+    </Media>
+    <Media Include="Resources\pretend.mp3">
+      <Filter>Source Files\Resources</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\flames.png">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Smiley.bmp">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Smiley.png">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\sparkle.png">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_back.bmp">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_back.tif">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_down.bmp">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_down.tif">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_front.bmp">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_front.tif">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_left.bmp">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_left.tif">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_right.bmp">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_right.tif">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_up.bmp">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Sunny1_up.tif">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\terrain.bmp">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\terrain.png">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\Texture_Rail.png">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\ShippingContainer.png">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Resources\FreeMono.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeMonoBold.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeMonoBoldOblique.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeMonoOblique.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeSans.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeSansBold.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeSansBoldOblique.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeSansOblique.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeSerif.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeSerifBold.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeSerifBoldItalic.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
+    <Font Include="Resources\FreeSerifItalic.ttf">
+      <Filter>Source Files\Resources</Filter>
+    </Font>
   </ItemGroup>
 </Project>

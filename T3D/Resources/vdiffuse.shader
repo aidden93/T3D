@@ -1,4 +1,5 @@
-out vec4 color;
+//TODO switch back to out vec4 color;
+varying vec4 color;
 
 void main()
 {

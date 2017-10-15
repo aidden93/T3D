@@ -15,28 +15,20 @@ namespace T3D
 		//front
 		setVertex(pos++, -size, -size, -size); //Top left
 		setVertex(pos++, size, -size, -size); //Top right
-		//setVertex(pos++, size, size, -size); //Bottom right
-		//setVertex(pos++, -size, size, -size); //Bottom left
 		setVertex(pos++, 0, size, 0);
 		setVertex(pos++, 0, size, 0);
 		//back
 		setVertex(pos++, -size, -size, size);
 		setVertex(pos++, size, -size, size);
-		//setVertex(pos++, size, size, size);
-		//setVertex(pos++, -size, size, size);
 		setVertex(pos++, 0, size, 0);
 		setVertex(pos++, 0, size, 0);
 		//left
 		setVertex(pos++, -size, -size, -size);
-		//setVertex(pos++, -size, size, -size);
-		//setVertex(pos++, -size, size, size);
 		setVertex(pos++, 0, size, 0);
 		setVertex(pos++, 0, size, 0);
 		setVertex(pos++, -size, -size, size);
 		//right
 		setVertex(pos++, size, -size, -size);
-		//setVertex(pos++, size, size, -size);
-		//setVertex(pos++, size, size, size);
 		setVertex(pos++, 0, size, 0);
 		setVertex(pos++, 0, size, 0);
 		setVertex(pos++, size, -size, size);
@@ -60,7 +52,7 @@ namespace T3D
 		//bottom
 		setFace(pos++, 19, 18, 17, 16);
 		//top
-		setFace(pos++, 20, 21, 22, 23);
+		//setFace(pos++, 20, 21, 22, 23);
 
 		// Check vertex and index arrays
 		checkArrays();
