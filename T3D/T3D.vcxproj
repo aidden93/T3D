@@ -37,6 +37,7 @@
     <ClCompile Include="GLShader.cpp" />
     <ClCompile Include="GLTestApplication.cpp" />
     <ClCompile Include="GLTestRenderer.cpp" />
+    <ClCompile Include="House.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Jar.cpp" />
     <ClCompile Include="KeyboardController.cpp" />
@@ -60,6 +61,7 @@
     <ClCompile Include="Propeller.cpp" />
     <ClCompile Include="Pyramid.cpp" />
     <ClCompile Include="Quaternion.cpp" />
+    <ClCompile Include="RaiseArms.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="RotateBehaviour.cpp" />
     <ClCompile Include="Shader.cpp" />
@@ -114,6 +116,7 @@
     <ClInclude Include="GLTestApplication.h" />
     <ClInclude Include="GLTestRenderer.h" />
     <ClInclude Include="FancyPropeller.h" />
+    <ClInclude Include="House.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Jar.h" />
     <ClInclude Include="KeyboardController.h" />
@@ -136,6 +139,7 @@
     <ClInclude Include="Propeller.h" />
     <ClInclude Include="Pyramid.h" />
     <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="RaiseArms.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="RotateBehaviour.h" />
     <ClInclude Include="Shader.h" />
@@ -181,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\flames.png" />
+    <Image Include="Resources\house.jpg" />
     <Image Include="Resources\ShippingContainer.png" />
     <Image Include="Resources\Smiley.bmp" />
     <Image Include="Resources\Smiley.png" />

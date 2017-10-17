@@ -312,6 +312,12 @@
     <ClCompile Include="FollowObject.cpp">
       <Filter>Source Files\Assignment2</Filter>
     </ClCompile>
+    <ClCompile Include="RaiseArms.cpp">
+      <Filter>Source Files\Assignment2</Filter>
+    </ClCompile>
+    <ClCompile Include="House.cpp">
+      <Filter>Source Files\Assignment2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mesh.h">
@@ -542,6 +548,12 @@
     <ClInclude Include="FollowObject.h">
       <Filter>Header Files\Assignment2</Filter>
     </ClInclude>
+    <ClInclude Include="RaiseArms.h">
+      <Filter>Header Files\Assignment2</Filter>
+    </ClInclude>
+    <ClInclude Include="House.h">
+      <Filter>Header Files\Assignment2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Example.ogg">
@@ -636,6 +648,9 @@
       <Filter>Source Files\Resources</Filter>
     </Image>
     <Image Include="Resources\ShippingContainer.png">
+      <Filter>Source Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\house.jpg">
       <Filter>Source Files\Resources</Filter>
     </Image>
   </ItemGroup>

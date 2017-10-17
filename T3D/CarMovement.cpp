@@ -84,6 +84,7 @@ namespace T3D {
 			if (pos.x == 0 && pos.y == -75 && pos.z == 594) {
 				//currentState = FIRST_CLIMB;
 				elapsedTime = 0;
+				setFinsihed(true);
 			}
 		}
 	}

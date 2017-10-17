@@ -1,6 +1,7 @@
 #include "Car.h"
 #include "SweepPath.h"
 #include "Sweep.h"
+#include "Cylinder.h"
 
 namespace T3D {
 
@@ -51,5 +52,12 @@ namespace T3D {
 		setMesh(new Sweep(profile, path, false));
 		getTransform()->setLocalPosition(Vector3(0, 0, 0));
 		getTransform()->name = "Car";
+
+		rail = new GameObject(app);
+		rail->setMesh(new Cylinder(0.05, 0.09, 16));
+		rail->getTransform()->setParent(getTransform());
+		rail->getTransform()->setLocalPosition(Vector3(0, 8, 0.5));
+		rail->getTransform()->setLocalRotation(Quaternion(0,0,Math::HALF_PI));
+		rail->getTransform()->setLocalScale(Vector3(10,5,1));
 	}
 }

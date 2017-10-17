@@ -48,21 +48,22 @@ namespace T3D {
 		//Configure the left shoulder joint sub component
 		leftShoulderJoint = new GameObject(app);
 		leftShoulderJoint->getTransform()->setParent(body->getTransform());
-		leftShoulderJoint->getTransform()->setLocalPosition(Vector3(bodyRadius, bodyLength-armLength, 0));
+		leftShoulderJoint->getTransform()->setLocalPosition(Vector3(bodyRadius, bodyLength, 0));
+		leftShoulderJoint->getTransform()->setLocalRotation(Quaternion(Vector3(-Math::PI / 4, 0, 0))); // this rotation is just to make a good starting pose
 		leftShoulderJoint->getTransform()->name = "LeftShoulderJoint";
 
 		//Configure the left arm sub component
 		leftArm = new GameObject(app);
 		leftArm->setMesh(new Cylinder(armRadius, armLength, 16));
 		leftArm->getTransform()->setParent(leftShoulderJoint->getTransform());
-		leftArm->getTransform()->setLocalPosition(Vector3(armRadius, 0, 0));
+		leftArm->getTransform()->setLocalPosition(Vector3(armRadius, -armLength, 0));
 		leftArm->getTransform()->name = "LeftArm";
 
 		//Configure the elbow joint sub component
 		leftElbowJoint = new GameObject(app);
 		leftElbowJoint->getTransform()->setLocalPosition(Vector3(0, -armLength, 0));
 		leftElbowJoint->getTransform()->setParent(leftArm->getTransform());
-		//leftElbowJoint->getTransform()->setLocalRotation(Quaternion(Vector3(-Math::PI / 4, 0, 0))); // this rotation is just to make a good starting pose
+		leftElbowJoint->getTransform()->setLocalRotation(Quaternion(Vector3(-Math::PI / 4, 0, 0))); // this rotation is just to make a good starting pose
 		leftElbowJoint->getTransform()->name = "LeftElbowJoint";
 
 		//Configure the forearm sub component
@@ -88,21 +89,22 @@ namespace T3D {
 		//Configure the right shoulder joint sub component
 		rightShoulderJoint = new GameObject(app);
 		rightShoulderJoint->getTransform()->setParent(body->getTransform());
-		rightShoulderJoint->getTransform()->setLocalPosition(Vector3(-bodyRadius, bodyLength - armLength, 0));
+		rightShoulderJoint->getTransform()->setLocalPosition(Vector3(-bodyRadius, bodyLength , 0));
+		rightShoulderJoint->getTransform()->setLocalRotation(Quaternion(Vector3(-Math::PI / 4, 0, 0))); // this rotation is just to make a good starting pose
 		rightShoulderJoint->getTransform()->name = "RightShoulderJoint";
 
 		//Configure the right arm sub component
 		rightArm = new GameObject(app);
 		rightArm->setMesh(new Cylinder(armRadius, armLength, 16));
 		rightArm->getTransform()->setParent(rightShoulderJoint->getTransform());
-		rightArm->getTransform()->setLocalPosition(Vector3(-armRadius, 0, 0));
+		rightArm->getTransform()->setLocalPosition(Vector3(-armRadius, -armLength, 0));
 		rightArm->getTransform()->name = "RightArm";
 
 		//Configure the elbow joint sub component
 		rightElbowJoint = new GameObject(app);
 		rightElbowJoint->getTransform()->setLocalPosition(Vector3(0, -armLength, 0));
 		rightElbowJoint->getTransform()->setParent(rightArm->getTransform());
-		//rightElbowJoint->getTransform()->setLocalRotation(Quaternion(Vector3(-Math::PI / 4, 0, 0))); // this rotation is just to make a good starting pose
+		rightElbowJoint->getTransform()->setLocalRotation(Quaternion(Vector3(-Math::PI / 4, 0, 0))); // this rotation is just to make a good starting pose
 		rightElbowJoint->getTransform()->name = "RightElbowJoint";
 
 		//Configure the forearm sub component
